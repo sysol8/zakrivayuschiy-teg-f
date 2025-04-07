@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+/* html {
+  font-size: 62.5%;
+} */
+
 body {
   margin: 0;
 }
@@ -21,7 +25,8 @@ h6,
 p,
 ul,
 ol,
-li {
+li,
+figure {
   margin: 0;
   padding: 0;
 }
