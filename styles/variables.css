@@ -13,7 +13,7 @@
   repeating-linear-gradient(0deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
   linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 
-  --section-width: clamp(375px, 100%, 700px);
+  --section-width: clamp(23.438rem, 16.2859rem + 30.5157vw, 43.75rem);
 
   /* --header-padding-clamp: clamp(120px, 100%, 128px) clamp(14px, 100%, 120.5px); */
 }
