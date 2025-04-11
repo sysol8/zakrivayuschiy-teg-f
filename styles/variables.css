@@ -14,6 +14,7 @@
   linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 
   --section-width: clamp(23.438rem, 16.2859rem + 30.5157vw, 43.75rem);
-
-  /* --header-padding-clamp: clamp(120px, 100%, 128px) clamp(14px, 100%, 120.5px); */
+  
+  --contour-fill-color: #000;
+  --core-fill-color: #FF0000; 
 }

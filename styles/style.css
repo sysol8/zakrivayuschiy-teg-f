@@ -306,3 +306,52 @@
     padding-block: 4px;
   }
 }
+
+.sparks {
+  opacity: 0;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s;
+}
+
+.like-icon:hover .core {
+  fill: var(--contour-fill-color);
+}
+
+.like-icon:not(:hover) .core {
+  transition-delay: 0.03s;
+}
+
+.like-icon:active .core {
+  fill: var(--core-fill-color);
+}
+
+.like-icon:not(:active) .core {
+  transition-delay: 0.03s;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--contour-fill-color);
+}
+
+.like-icon:not(:hover) .main-body {
+  transition-delay: 0s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--core-fill-color);
+}
+
+.like-icon:not(:active) .main-body {
+  transition-delay: 0s;
+}
+
+/* сделать анимацию клика по сердцу, перепроверить верстку, 
+поменять свг-иконки сердца после первой, проверить, правильно ли сделан бекграунд */
