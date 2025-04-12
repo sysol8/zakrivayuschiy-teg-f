@@ -175,6 +175,8 @@
 .button__text {
   color: #fff;
   mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
 }
 
 .button:has(.button__text):focus-visible {
@@ -203,11 +205,6 @@
 .card__like-button {
   inline-size: 130px;
   block-size: 38px;
-}
-
-.button__text {
-  position: relative;
-  z-index: 1;
 }
 
 .footer {
