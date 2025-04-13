@@ -345,8 +345,6 @@
   transition-delay: 0s;
 }
 
-/* анимация по клику */
-
 .like-icon.is-liked .core {
   fill: var(--core-fill-color);
   transition: fill 0.3s linear;
