@@ -1,8 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
   padding: 100px 0;
   overflow-y: auto;
   font-family: var(--main-font), Arial, Helvetica, sans-serif;
@@ -58,21 +57,21 @@
 }
 
 .card__title {
-  border-block-end: var(--content-border);
   padding: 6.5px 10px;
   font-size: 18px;
-  line-height: 1;
+  line-height: 100%;
   font-variation-settings: "wght" var(--main-font-title-weight);
 }
 
 .card__image-wrapper {
   position: relative;
   display: flex;
+  border-block: var(--content-border);
 }
 
 .card__image {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: right;
   aspect-ratio: 1/1;
@@ -130,8 +129,7 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  border-block-start: var(--content-border);
-  padding: 25px 25px 0;
+  padding: 25px 25px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -142,7 +140,7 @@
   gap: 6px;
   align-self: end;
   margin-inline-end: 25px;
-  margin-block: 25px;
+  margin-block-end: 25px;
   block-size: 38px;
 }
 
@@ -205,6 +203,7 @@
 .card__like-button {
   inline-size: 130px;
   block-size: 38px;
+  padding: 0;
 }
 
 .button-save {
@@ -270,6 +269,7 @@
     inline-size: 100%;
   }
 
+
   .card__image-label {
     top: 23px;
     right: 13px;
@@ -278,22 +278,18 @@
   .button-save {
     flex-direction: column;
   }
-
+  
   .button-save__icon {
     inline-size: 28px;
   }
 
   .card__title {
-    padding-block: 4px;
     line-height: 22px;
+    padding: 3.5px 10px 5.5px;
   }
 
-  .card__description {
-    gap: 27px;
-  }
-
-  .card__buttons {
-    padding-block-end: 25px;
+  .card:first-child .card__title {
+    padding: 4px 10px;
   }
 }
 
@@ -308,7 +304,7 @@
 
 .like-icon .main-body {
   fill: transparent;
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s;
 }
 
 .like-icon .contour {
@@ -333,6 +329,7 @@
 
 .like-icon:hover .main-body {
   fill: var(--contour-fill-color);
+  transition-delay: 0.05s;
 }
 
 .like-icon:not(:hover) .main-body {
@@ -341,6 +338,7 @@
 
 .like-icon:active .main-body {
   fill: var(--core-fill-color);
+  transition-delay: 0.05s;
 }
 
 .like-icon:not(:active) .main-body {
